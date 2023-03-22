@@ -1,6 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
 
+/* SETUP */
+:root {
+    /* Color Styles */
+    --primary: red;
+    --primary-dark: darkred;
+
+    /*Font Size Desktop */
+    --header-1: 64px;
+    --header-2: 48px;
+    --header-3: 42px;
+    --header-4: 32px;
+
+    --text-medium: 20px;
+    --text-regular: 16px;
+    --text-light: 14px;
+
+    /*Font Weight*/
+    --font-weight-bold: 700;
+    --font-weight-medium: 500;
+    --font-weight-regular: 400;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
     overflow-x: hidden;
@@ -13,6 +35,40 @@ body {
 
 .btn {
     border-radius: 20px;
-    background-color: red;
+    background-color: var(--primary);
     border: none;
+}
+
+.btn:hover {
+    background-color: var(--primary-dark);
+}
+
+.navItem {
+    padding: 0px 10px 0px 10px;
+}
+
+/* Hero Section */
+section.hero {
+    margin: 5rem 0;
+}
+
+.text-label,
+.text-hero-bold {
+    margin: 24px 0;
+}
+
+.text-label {
+    font-size: var(--text-regular);
+    font-weight: var(--font-weight-regular);
+    line-height: 74px;
+}
+
+.text-hero-bold {
+    font-size: var(--header-1);
+    font-weight: var(--font-weight-bold);
+    line-height: 74px;
+}
+
+.hero-img {
+    width: 100%;
 }
