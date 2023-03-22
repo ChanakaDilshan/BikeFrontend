@@ -72,3 +72,54 @@ section.hero {
 .hero-img {
     width: 100%;
 }
+
+
+/* Desktop */
+@media (min-width: 1399.98px) {
+    .container {
+        width: 84%;
+    }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+
+    /* Hero Section */
+section.hero {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.btn {
+    display: block;
+    margin: 1rem 0;
+}
+
+.ms-3 {
+    margin-left: 0 !important;
+}
+
+.text-label,
+.text-hero-bold {
+    text-align: center;
+}
+
+.text-hero-bold {
+    font-size: var(--header-3);
+    font-weight: var(--font-weight-bold);
+    line-height: 64px;
+}
+
+}
+
+
+/* Tablet */
+@media (max-width: 768px) {
+
+        /* Hero Section */
+section.hero {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+}
