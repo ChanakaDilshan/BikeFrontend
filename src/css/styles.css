@@ -6,6 +6,7 @@
     /* Color Styles */
     --primary: red;
     --primary-dark: darkred;
+    --primary-light: #FE5045;
 
     /*Font Size Desktop */
     --header-1: 64px;
@@ -26,6 +27,10 @@
 body {
     font-family: 'Montserrat', sans-serif;
     overflow-x: hidden;
+}
+
+h1 {
+    text-align: center;
 }
 
 
@@ -71,6 +76,40 @@ section.hero {
 
 .hero-img {
     width: 100%;
+}
+
+/* About Us Section */
+section.about-us {
+    align-items: center;
+}
+
+.card {
+    margin: 2rem ;
+    background-color: #F9FAFC;
+    border-radius: 20px;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    
+}
+
+.cardmain {
+    margin: 2rem ;
+    background-color: var(--primary-light);
+    border-radius: 20px;
+    text-align: center;
+    padding: 10px;
+    color: #F9FAFC;
+}
+
+
+.about-icons {
+    width: 100px;
+}
+
+/* Product */
+section.product {
+    /* max-width: 80%; */
 }
 
 
