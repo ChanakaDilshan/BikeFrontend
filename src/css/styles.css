@@ -34,6 +34,7 @@ h1 {
 }
 
 
+
 .logo {
     width: 50px;
 }
@@ -80,7 +81,21 @@ section.hero {
 
 /* About Us Section */
 section.about-us {
+    margin-top: 100px;
     align-items: center;
+}
+
+.features {
+    margin: 2rem ;
+    background-color: #F9FAFC;
+    border-radius: 20px;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+
+.card:hover {
+    background-color: var(--primary-light);
 }
 
 .card {
@@ -91,27 +106,91 @@ section.about-us {
     text-align: center;
     padding: 10px;
     
+    
 }
 
-.cardmain {
-    margin: 2rem ;
-    background-color: var(--primary-light);
-    border-radius: 20px;
-    text-align: center;
-    padding: 10px;
-    color: #F9FAFC;
-}
 
 
 .about-icons {
     width: 100px;
 }
 
+.about-des {
+    text-align: center;
+    font-size: var(--text-regular);
+    margin-top: 100px;
+}
+
 /* Product */
 section.product {
+    margin-top: 100px;
     /* max-width: 80%; */
 }
 
+/* Testimonials */
+section.testimonials {
+    background-color: white;
+    padding: 80px 0;
+    
+}
+
+.testi-img .img-box {
+    max-width: 360px;
+    margin: auto;
+    text-align: center;
+    position: relative;
+
+}
+
+.testi-img .circle {
+    height: 360px;
+    width: 360px;
+    background-color: var(--primary-light);
+    position: absolute;
+    border-radius: 50%;
+    left: 0;
+    bottom: 0;
+}
+
+.testi-img .img-box-inner {
+    position: relative;
+    border-radius: 0 0 180px 180px;
+    overflow: hidden;
+}
+
+.testi-item h3,
+.testi-item p{
+    font-size: 18px;
+}
+
+
+
+.testi-img .img-box-inner img {
+    max-width: 310px;
+}
+
+.testimonials .carousel-inner {
+    margin-top: 20px;
+}
+
+.testimonials .carousel-control-next {
+    margin-left: 10px;
+}
+
+.testimonials .carousel-control-prev,
+.testimonials .carousel-control-next {
+    position: relative;
+    height: 35px;
+    width: 35px;
+    background-color: #FE5045;
+    display: inline-flex;
+    border-radius: 50%;
+}
+
+.testimonials .carousel-control-prev img,
+.testimonials .carousel-control-next img {
+    width: 15px;
+}
 
 /* Desktop */
 @media (min-width: 1399.98px) {
@@ -122,6 +201,7 @@ section.product {
 
 /* Mobile */
 @media (max-width: 576px) {
+    
 
     /* Hero Section */
 section.hero {
@@ -149,6 +229,21 @@ section.hero {
     line-height: 64px;
 }
 
+.features {
+    margin: 2rem ;
+    background-color: #F9FAFC;
+    border-radius: 20px;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    
+}
+
+.testi-img {
+    margin-bottom: 25px;
+}
+
 }
 
 
@@ -160,5 +255,23 @@ section.hero {
     margin: 2rem 0;
     text-align: center;
 }
+
+.testi-img .img-box{
+    max-width: 300px;
+}
+
+.testi-img .circle {
+    height: 300px;
+    width: 300px;
+}
+
+.testi-img .img-box-inner {
+    border-radius: 0 0 150px 150px;
+}
+
+.testi-img .img-box-inner img {
+    max-width: 230px;
+}
+
 
 }
